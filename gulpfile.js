@@ -11,4 +11,7 @@ gulp.task('sass', function() {
     .pipe(browserSync.stream());
 });
 
+gulp.task('watch',function() {
+    gulp.watch('scss/styles.scss',['sass']);
+});
 gulp.task('default', ['sass']);

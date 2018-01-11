@@ -10,10 +10,19 @@ get_header();?>
 
     <?php include(TEMPLATEPATH . "/inc/banners.php"); ?>
 
-    <section class="content">
+    <section class="content produto-interna">
       <div class="container">
-        <h2><?php echo the_field('titulo') ?></h2>
-        <?php echo the_field('texto') ?>
+      	<div class="row">
+      		<div class="col-lg-6 col-12">
+      			<div class="imagem__cardapio__item">
+      				<img src="<?php the_field('imagem'); ?>" alt="" class="img-responsive">
+      			</div>
+      		</div>
+      		<div class="col-lg-6 col-12 descricao_cardapio__item">
+      			<h3><?php echo the_field('titulo') ?></h3>
+      			<?php echo the_field('texto') ?>
+      		</div>
+      	</div>
       </div>
     </section>
 
@@ -21,5 +30,5 @@ get_header();?>
 
 
 
-  <?php get_footer(); ?>
+<?php get_footer(); ?>
 

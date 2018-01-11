@@ -22,7 +22,7 @@ h2 {
   position: fixed; }
 
 .topo {
-  position: absolute;
+  position: relative;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   left: 0;
@@ -77,6 +77,13 @@ h2 {
         padding: 8px 0; }
         .topo nav ul li a.pedido img {
           margin-right: 7px; }
+
+.topo a.logo {
+  display: block;
+  text-decoration: none; }
+  @media (max-width: 480px) {
+    .topo a.logo img {
+      width: 100%; } }
 
 @media screen and (max-width: 768px) {
   .topo nav ul {
@@ -186,6 +193,9 @@ main .slider .slide {
 .cardapio {
   padding: 60px 0 100px;
   text-align: center; }
+  @media (max-width: 768px) {
+    .cardapio {
+      padding: 30px 0; } }
   .cardapio h2 {
     margin-bottom: 40px; }
   .cardapio p a {
@@ -270,6 +280,10 @@ main .slider .slide {
       width: 180px;
       height: 2px;
       background-color: #455d7c; }
+      @media (max-width: 600px) {
+        .adicionais h3::after, .adicionais h3::before {
+          margin: 7px 15px;
+          width: 77px; } }
   .adicionais h4 {
     color: #15a8ab; }
   .adicionais .lista__adicionais {
@@ -296,38 +310,9 @@ main .slider .slide {
 
 .item__descricao {
   flex: 1; }
-
-.novidades {
-  height: 450px;
-  padding: 54px 0;
-  background-color: rgba(7, 7, 7, 0.5);
-  background-blend-mode: multiply;
-  background-image: url(../img/BannerOriginal-Rodape.jpg);
-  background-attachment: fixed;
-  background-position: 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  text-align: center;
-  color: #f3f3f3; }
-
-.novidades__box {
-  background-color: rgba(212, 135, 31, 0.8);
-  max-width: 460px;
-  margin: 0 auto;
-  padding: 54px 0; }
-
-.novidades h2 {
-  font-family: KG Life, cursive;
-  font-size: 45px;
-  line-height: 55px; }
-
-.novidades p {
-  font-size: 13px;
-  line-height: 20px;
-  text-transform: uppercase;
-  max-width: 265px;
-  display: block;
-  margin: 20px auto; }
+  @media (max-width: 600px) {
+    .item__descricao {
+      padding: 15px 0; } }
 
 .eventos {
   background-image: url("../img/eventos.jpg");
@@ -338,6 +323,9 @@ main .slider .slide {
   align-items: center;
   justify-content: center;
   color: #ffffff; }
+  @media (max-width: 600px) {
+    .eventos {
+      padding: 60px 0; } }
   .eventos p {
     margin: 50px auto;
     text-align: center;
@@ -361,11 +349,17 @@ main .slider .slide {
   .sobre h2 {
     color: #beb27d;
     margin: 50px 0; }
+  @media (max-width: 600px) {
+    .sobre p {
+      padding: 15px 0 0; } }
 
 footer {
   background-color: #f3efe6;
   background-image: url(../img/Textura.png);
   color: #59595b; }
+  @media (max-width: 600px) {
+    footer {
+      padding: 60px 0; } }
   footer a {
     color: #59595b; }
   footer h2 {
@@ -461,12 +455,13 @@ footer .social li {
 section.content {
   padding: 60px 0 100px; }
   section.content h2 {
-    color: #333;
-    font-family: KG Life, cursive;
-    font-size: 45px;
-    line-height: 55px;
-    text-align: center;
     margin-bottom: 30px; }
+  section.content.produto-interna h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #de8a2e;
+    text-transform: uppercase;
+    margin-bottom: 40px; }
   section.content ul.galeria {
     display: flex;
     flex-wrap: wrap;
@@ -487,3 +482,8 @@ section.content {
   color: #FFF !important; }
   .novidades a:hover {
     text-decoration: none !important; }
+
+.descricao_cardapio__item h4 {
+  font-size: 14px;
+  color: #455d7c;
+  font-weight: bold; }

@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="description" content="Temos burritos, tacos, nachos, guacamole e cerveja com limão. Somos de Porto Alegre e buscamos trazer um pouco do México e da Califórnia para vocês.">
+    <meta name="description" content="Enodo Sushi">
     <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
     <title><?php wp_title(' '); ?></title>
     <link rel="apple-touch-icon" href="<?php echo get_stylesheet_directory_uri(); ?>/apple-touch-icon.png">
@@ -34,8 +34,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-2 col-8">
-                    <a href="/">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo-enodo.svg" alt="" class="img-responsive">
+                    <a href="<?php echo site_url() ?>" class="logo">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo-enodo.svg" alt="" class="img-responsive ">
                     </a>
                 </div>
                 <div class="col-4 hidden-lg hidden-md-up">
